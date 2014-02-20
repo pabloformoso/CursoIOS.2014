@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3EC49F18B6196D00AA3FAF /* Alumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EC49E18B6196D00AA3FAF /* Alumno.m */; };
+		6E3EC4A518B62EAA00AA3FAF /* NSString+Alumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EC4A418B62EAA00AA3FAF /* NSString+Alumno.m */; };
 		6E71D27E18B55C9500D3EB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E71D27D18B55C9500D3EB26 /* Foundation.framework */; };
 		6E71D28118B55C9500D3EB26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E71D28018B55C9500D3EB26 /* main.m */; };
 		6E71D28518B55C9500D3EB26 /* objc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E71D28418B55C9500D3EB26 /* objc.1 */; };
@@ -26,6 +28,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E3EC49D18B6196D00AA3FAF /* Alumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alumno.h; sourceTree = "<group>"; };
+		6E3EC49E18B6196D00AA3FAF /* Alumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alumno.m; sourceTree = "<group>"; };
+		6E3EC4A118B621C000AA3FAF /* AsisenciaDelegado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsisenciaDelegado.h; sourceTree = "<group>"; };
+		6E3EC4A318B62EAA00AA3FAF /* NSString+Alumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Alumno.h"; sourceTree = "<group>"; };
+		6E3EC4A418B62EAA00AA3FAF /* NSString+Alumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Alumno.m"; sourceTree = "<group>"; };
 		6E71D27A18B55C9500D3EB26 /* objc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objc; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E71D27D18B55C9500D3EB26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E71D28018B55C9500D3EB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +52,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3EC49C18B6187E00AA3FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E3EC49D18B6196D00AA3FAF /* Alumno.h */,
+				6E3EC49E18B6196D00AA3FAF /* Alumno.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E3EC4A018B620F200AA3FAF /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				6E3EC4A118B621C000AA3FAF /* AsisenciaDelegado.h */,
+			);
+			path = Protocolos;
+			sourceTree = "<group>";
+		};
+		6E3EC4A218B62E5100AA3FAF /* Categorias */ = {
+			isa = PBXGroup;
+			children = (
+				6E3EC4A318B62EAA00AA3FAF /* NSString+Alumno.h */,
+				6E3EC4A418B62EAA00AA3FAF /* NSString+Alumno.m */,
+			);
+			path = Categorias;
+			sourceTree = "<group>";
+		};
 		6E71D27118B55C9500D3EB26 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +106,9 @@
 		6E71D27F18B55C9500D3EB26 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				6E3EC4A218B62E5100AA3FAF /* Categorias */,
+				6E3EC4A018B620F200AA3FAF /* Protocolos */,
+				6E3EC49C18B6187E00AA3FAF /* Models */,
 				6E71D28018B55C9500D3EB26 /* main.m */,
 				6E71D28418B55C9500D3EB26 /* objc.1 */,
 				6E71D28218B55C9500D3EB26 /* Supporting Files */,
@@ -140,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E71D28118B55C9500D3EB26 /* main.m in Sources */,
+				6E3EC49F18B6196D00AA3FAF /* Alumno.m in Sources */,
+				6E3EC4A518B62EAA00AA3FAF /* NSString+Alumno.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +289,7 @@
 				6E71D28A18B55C9500D3EB26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
