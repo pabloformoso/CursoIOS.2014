@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:page_based/page_based.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:master_detail/master_detail.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:tabbed/tabbed.xcodeproj">
    </FileRef>
    <FileRef
