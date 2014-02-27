@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:gestor de clases/gestor de clases.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:page_based/page_based.xcodeproj">
    </FileRef>
    <FileRef
@@ -15,5 +18,8 @@
    </FileRef>
    <FileRef
       location = "group:objc/objc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GestionDeFicheros/GestionDeFicheros.xcodeproj">
    </FileRef>
 </Workspace>

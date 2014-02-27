@@ -18,7 +18,7 @@
 		6E41B0D218126FF600D6ADC6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E41B0D118126FF600D6ADC6 /* Default-568h@2x.png */; };
 		6E41B0D518126FF600D6ADC6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E41B0D318126FF600D6ADC6 /* MainStoryboard.storyboard */; };
 		6E41B0D818126FF600D6ADC6 /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41B0D718126FF600D6ADC6 /* SWViewController.m */; };
-		6E41B0E01812707500D6ADC6 /* plantilla.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E41B0DF1812707500D6ADC6 /* plantilla.txt */; };
+		6E41B0E01812707500D6ADC6 /* plan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E41B0DF1812707500D6ADC6 /* plan.txt */; };
 		6E41B0E21812936300D6ADC6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E41B0E11812936300D6ADC6 /* AssetsLibrary.framework */; };
 		6E41B0E41812937000D6ADC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E41B0E31812937000D6ADC6 /* AVFoundation.framework */; };
 		6E41B0E61812938C00D6ADC6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E41B0E51812938C00D6ADC6 /* CoreMedia.framework */; };
@@ -42,7 +42,7 @@
 		6E41B0D418126FF600D6ADC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6E41B0D618126FF600D6ADC6 /* SWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWViewController.h; sourceTree = "<group>"; };
 		6E41B0D718126FF600D6ADC6 /* SWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
-		6E41B0DF1812707500D6ADC6 /* plantilla.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plantilla.txt; sourceTree = "<group>"; };
+		6E41B0DF1812707500D6ADC6 /* plan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan.txt; sourceTree = "<group>"; };
 		6E41B0E11812936300D6ADC6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		6E41B0E31812937000D6ADC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6E41B0E51812938C00D6ADC6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -129,7 +129,7 @@
 		6E41B0DE1812704400D6ADC6 /* templates */ = {
 			isa = PBXGroup;
 			children = (
-				6E41B0DF1812707500D6ADC6 /* plantilla.txt */,
+				6E41B0DF1812707500D6ADC6 /* plan.txt */,
 			);
 			name = templates;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 				6E41B0D018126FF600D6ADC6 /* Default@2x.png in Resources */,
 				6E41B0D218126FF600D6ADC6 /* Default-568h@2x.png in Resources */,
 				6E41B0D518126FF600D6ADC6 /* MainStoryboard.storyboard in Resources */,
-				6E41B0E01812707500D6ADC6 /* plantilla.txt in Resources */,
+				6E41B0E01812707500D6ADC6 /* plan.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +327,7 @@
 				6E41B0DD18126FF600D6ADC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

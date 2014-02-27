@@ -14,6 +14,7 @@
 @interface SWViewController : UIViewController <UIActionSheetDelegate,UINavigationControllerDelegate,
     UIImagePickerControllerDelegate>
 
+
 @property (weak, nonatomic) IBOutlet UILabel *txLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *camaraImageView;
 

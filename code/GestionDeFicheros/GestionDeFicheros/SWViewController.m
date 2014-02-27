@@ -44,7 +44,7 @@
         [_txLabel setText:[error localizedDescription]];
     } else {
         [_txLabel setText:text];
-        //_txLabel.text = content;
+        //_txLabel.text = text;
     }
 }
 
