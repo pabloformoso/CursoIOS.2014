@@ -10,6 +10,8 @@
 		6E28BEB218C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */; };
 		6E28BEB718C0AEAA00A2C5C8 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6E28BEB418C0AEAA00A2C5C8 /* db.sqlite */; };
 		6E28BEB818C0AEAA00A2C5C8 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEB618C0AEAA00A2C5C8 /* SQLiteAccess.m */; };
+		6E28BEBA18C0B21300A2C5C8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E28BEB918C0B21300A2C5C8 /* libsqlite3.dylib */; };
+		6E28BEBE18C0BA0100A2C5C8 /* SQLiteAccess+Curso.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEBD18C0BA0100A2C5C8 /* SQLiteAccess+Curso.m */; };
 		6E292E2F18BF55EB0024380E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E2E18BF55EB0024380E /* Foundation.framework */; };
 		6E292E3118BF55EB0024380E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E3018BF55EB0024380E /* CoreGraphics.framework */; };
 		6E292E3318BF55EB0024380E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E3218BF55EB0024380E /* UIKit.framework */; };
@@ -45,6 +47,9 @@
 		6E28BEB418C0AEAA00A2C5C8 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = SQLite/db.sqlite; sourceTree = "<group>"; };
 		6E28BEB518C0AEAA00A2C5C8 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
 		6E28BEB618C0AEAA00A2C5C8 /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteAccess.m; sourceTree = "<group>"; };
+		6E28BEB918C0B21300A2C5C8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6E28BEBC18C0BA0100A2C5C8 /* SQLiteAccess+Curso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLiteAccess+Curso.h"; sourceTree = "<group>"; };
+		6E28BEBD18C0BA0100A2C5C8 /* SQLiteAccess+Curso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Curso.m"; sourceTree = "<group>"; };
 		6E292E2B18BF55EB0024380E /* gestor de clases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor de clases.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E292E2E18BF55EB0024380E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E292E3018BF55EB0024380E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E28BEBA18C0B21300A2C5C8 /* libsqlite3.dylib in Frameworks */,
 				6E292E3118BF55EB0024380E /* CoreGraphics.framework in Frameworks */,
 				6E292E3318BF55EB0024380E /* UIKit.framework in Frameworks */,
 				6E292E6018BF664C0024380E /* MapKit.framework in Frameworks */,
@@ -105,6 +111,15 @@
 			path = SQLite;
 			sourceTree = "<group>";
 		};
+		6E28BEBB18C0B98100A2C5C8 /* Categorias */ = {
+			isa = PBXGroup;
+			children = (
+				6E28BEBC18C0BA0100A2C5C8 /* SQLiteAccess+Curso.h */,
+				6E28BEBD18C0BA0100A2C5C8 /* SQLiteAccess+Curso.m */,
+			);
+			path = Categorias;
+			sourceTree = "<group>";
+		};
 		6E292E2218BF55EB0024380E = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +142,7 @@
 		6E292E2D18BF55EB0024380E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E28BEB918C0B21300A2C5C8 /* libsqlite3.dylib */,
 				6E292E5F18BF664C0024380E /* MapKit.framework */,
 				6E292E2E18BF55EB0024380E /* Foundation.framework */,
 				6E292E3018BF55EB0024380E /* CoreGraphics.framework */,
@@ -139,6 +155,7 @@
 		6E292E3418BF55EB0024380E /* gestor de clases */ = {
 			isa = PBXGroup;
 			children = (
+				6E28BEBB18C0B98100A2C5C8 /* Categorias */,
 				6E28BEB318C0AEAA00A2C5C8 /* SQLite */,
 				6E292E6918BF72F90024380E /* Views */,
 				6E292E6518BF6AE30024380E /* Controladores */,
@@ -318,6 +335,7 @@
 			files = (
 				6E292E6C18BF73430024380E /* SWAlumnoCell.m in Sources */,
 				6E292E6418BF68F50024380E /* SWAlumno.m in Sources */,
+				6E28BEBE18C0BA0100A2C5C8 /* SQLiteAccess+Curso.m in Sources */,
 				6E28BEB218C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m in Sources */,
 				6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */,
 				6E292E3F18BF55EB0024380E /* SWAppDelegate.m in Sources */,

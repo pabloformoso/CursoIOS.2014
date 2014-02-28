@@ -27,6 +27,21 @@
   return self;
 }
 
+- (id)initWithDictionary:(NSDictionary *)dic {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  self = [super init];
+  if (self) {
+    _nombre = [dic objectForKey:@"nombre"];
+    _apellidos = [dic objectForKey:@"apellidos"];
+    _email = [dic objectForKey:@"email"];
+    _ciudad = [dic objectForKey:@"ciudad"];
+    _avatarUrl = [dic objectForKey:@"avatar_url"];
+  }
+  return self;
+}
+
 #pragma mark - KeyedArchive
 - (id)initWithCoder:(NSCoder *)coder {
 #ifndef NDEBUG

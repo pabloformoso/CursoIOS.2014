@@ -14,6 +14,8 @@
             apellido:(NSString *)unApellido
              yCorreo:(NSString *)unCorreo;
 
+- (id)initWithDictionary:(NSDictionary *)dic;
+
 @property(nonatomic, strong) NSString *nombre;
 @property(nonatomic, strong) NSString *apellidos;
 @property(nonatomic, strong) NSString *ciudad;
