@@ -5,13 +5,35 @@
 //  Created by Pablo Formoso Estada on 27/02/14.
 //  Copyright (c) 2014 Pablo Formoso Estada. All rights reserved.
 //
-
+#import "SWAlumno.h"
 #import "SWAppDelegate.h"
 
 @implementation SWAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  SWAlumno *al1 = [[SWAlumno alloc] initWithNombre:@"Pablo"
+                                          apellido:@"Formoso"
+                                           yCorreo:@"pablo@pabloformoso.com"];
+  
+  SWAlumno *al2 = [[SWAlumno alloc] initWithNombre:@"Paula"
+                                          apellido:@"Perez"
+                                           yCorreo:@"pperez@gmail.com"];
+  
+  NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+  NSArray *tmpArray = @[al1, al2];
+  
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d) Codificando__________", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  [userDefault setObject:[NSKeyedArchiver archivedDataWithRootObject:tmpArray]
+                  forKey:@"alumnos"];
+  
     return YES;
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6E28BEB218C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */; };
+		6E28BEB718C0AEAA00A2C5C8 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6E28BEB418C0AEAA00A2C5C8 /* db.sqlite */; };
+		6E28BEB818C0AEAA00A2C5C8 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEB618C0AEAA00A2C5C8 /* SQLiteAccess.m */; };
 		6E292E2F18BF55EB0024380E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E2E18BF55EB0024380E /* Foundation.framework */; };
 		6E292E3118BF55EB0024380E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E3018BF55EB0024380E /* CoreGraphics.framework */; };
 		6E292E3318BF55EB0024380E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E3218BF55EB0024380E /* UIKit.framework */; };
@@ -40,6 +42,9 @@
 /* Begin PBXFileReference section */
 		6E28BEB018C08D6400A2C5C8 /* SWDetalleAlumnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWDetalleAlumnoViewController.h; sourceTree = "<group>"; };
 		6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWDetalleAlumnoViewController.m; sourceTree = "<group>"; };
+		6E28BEB418C0AEAA00A2C5C8 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = SQLite/db.sqlite; sourceTree = "<group>"; };
+		6E28BEB518C0AEAA00A2C5C8 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
+		6E28BEB618C0AEAA00A2C5C8 /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteAccess.m; sourceTree = "<group>"; };
 		6E292E2B18BF55EB0024380E /* gestor de clases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor de clases.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E292E2E18BF55EB0024380E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E292E3018BF55EB0024380E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E28BEB318C0AEAA00A2C5C8 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				6E28BEB518C0AEAA00A2C5C8 /* SQLiteAccess.h */,
+				6E28BEB618C0AEAA00A2C5C8 /* SQLiteAccess.m */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
 		6E292E2218BF55EB0024380E = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +139,7 @@
 		6E292E3418BF55EB0024380E /* gestor de clases */ = {
 			isa = PBXGroup;
 			children = (
+				6E28BEB318C0AEAA00A2C5C8 /* SQLite */,
 				6E292E6918BF72F90024380E /* Views */,
 				6E292E6518BF6AE30024380E /* Controladores */,
 				6E292E6118BF68450024380E /* Modelos */,
@@ -140,6 +155,7 @@
 		6E292E3518BF55EB0024380E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E28BEB418C0AEAA00A2C5C8 /* db.sqlite */,
 				6E292E3618BF55EB0024380E /* gestor de clases-Info.plist */,
 				6E292E3718BF55EB0024380E /* InfoPlist.strings */,
 				6E292E3A18BF55EB0024380E /* main.m */,
@@ -281,6 +297,7 @@
 				6E292E5E18BF566E0024380E /* main_interface.storyboard in Resources */,
 				6E292E3918BF55EB0024380E /* InfoPlist.strings in Resources */,
 				6E292E4118BF55EB0024380E /* Images.xcassets in Resources */,
+				6E28BEB718C0AEAA00A2C5C8 /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +322,7 @@
 				6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */,
 				6E292E3F18BF55EB0024380E /* SWAppDelegate.m in Sources */,
 				6E292E3B18BF55EB0024380E /* main.m in Sources */,
+				6E28BEB818C0AEAA00A2C5C8 /* SQLiteAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

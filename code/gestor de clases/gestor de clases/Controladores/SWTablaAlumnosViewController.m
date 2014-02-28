@@ -26,16 +26,10 @@
 #endif
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = YES;
+    
+  _alumnos = [[NSMutableArray alloc] init];
   
-  SWAlumno *al1 = [[SWAlumno alloc] initWithNombre:@"Pablo"
-                                          apellido:@"Formoso"
-                                           yCorreo:@"pablo@pabloformoso.com"];
-  
-  SWAlumno *al2 = [[SWAlumno alloc] initWithNombre:@"Paula"
-                                          apellido:@"Perez"
-                                           yCorreo:@"pperez@gmail.com"];
-  
-  _alumnos = [[NSMutableArray alloc] initWithArray:@[al1, al2]];
+  [self loadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -124,7 +118,8 @@
   if ([segue.identifier isEqualToString:@"ver_detalle"]) {
     SWDetalleAlumnoViewController *controladorDestino = [segue destinationViewController];
     [controladorDestino loadData:tmp];
-    /* 
+    
+    /*
     Envío como si fuese un protocolo informal
     if ([controladorDestino respondsToSelector:@selector(loadData:)]) {
       [controladorDestino performSelector:@selector(loadData:) withObject:tmp];
@@ -132,6 +127,17 @@
     */
     
   }
+}
+
+#pragma mark - Métodos privados
+- (void)loadData {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+  NSData *alumnosData = [userDefaults objectForKey:@"alumnos"];
+  _alumnos = [NSKeyedUnarchiver unarchiveObjectWithData:alumnosData];
 }
 
 @end
