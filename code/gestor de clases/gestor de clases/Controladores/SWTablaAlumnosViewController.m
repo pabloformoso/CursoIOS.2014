@@ -59,7 +59,7 @@
     
   SWAlumno *tmp = [_alumnos objectAtIndex:indexPath.row];
   
-  [cell.nombreLabel setText:tmp.nombre];
+  [cell.nombreLabel setText:[tmp nombreCompleto]];
   [cell.ciudadLabel setText:tmp.ciudad];
   [cell.emailLabel setText:tmp.email];
   
@@ -135,9 +135,13 @@
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
   
+  _alumnos = [[NSMutableArray alloc] initWithArray:[SQLiteAccess seleccionarTodosLosAlumnos]];
+  
+  /* Cargar datos desde el userDefault
   NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
   NSData *alumnosData = [userDefaults objectForKey:@"alumnos"];
   _alumnos = [NSKeyedUnarchiver unarchiveObjectWithData:alumnosData];
+   */
 }
 
 @end

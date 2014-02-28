@@ -5,6 +5,27 @@
 //  Created by Pablo Formoso Estada on 27/02/14.
 //  Copyright (c) 2014 Pablo Formoso Estada. All rights reserved.
 //
+
+/* Cargar datos en el UserDefault
+ SWAlumno *al1 = [[SWAlumno alloc] initWithNombre:@"Pablo"
+ apellido:@"Formoso"
+ yCorreo:@"pablo@pabloformoso.com"];
+ 
+ SWAlumno *al2 = [[SWAlumno alloc] initWithNombre:@"Paula"
+ apellido:@"Perez"
+ yCorreo:@"pperez@gmail.com"];
+ 
+ NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+ NSArray *tmpArray = @[al1, al2];
+ 
+ #ifndef NDEBUG
+ NSLog(@"%s (line:%d) Codificando__________", __PRETTY_FUNCTION__, __LINE__);
+ #endif
+ 
+ [userDefault setObject:[NSKeyedArchiver archivedDataWithRootObject:tmpArray]
+ forKey:@"alumnos"];
+ */
+
 #import "SWAlumno.h"
 #import "SWAppDelegate.h"
 
@@ -14,25 +35,11 @@
 
 #ifndef NDEBUG
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+  NSLog(@"%@", [SQLiteAccess consultarPrimerNombre]);
+  
+  SWAlumno *db = [SQLiteAccess seleccionarAlumno:@"pablo@pabloformoso.com"];
+  NSLog(@"\nSelección de un alumno: %@\n", [db nombreCompleto]);
 #endif
-  
-  SWAlumno *al1 = [[SWAlumno alloc] initWithNombre:@"Pablo"
-                                          apellido:@"Formoso"
-                                           yCorreo:@"pablo@pabloformoso.com"];
-  
-  SWAlumno *al2 = [[SWAlumno alloc] initWithNombre:@"Paula"
-                                          apellido:@"Perez"
-                                           yCorreo:@"pperez@gmail.com"];
-  
-  NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-  NSArray *tmpArray = @[al1, al2];
-  
-#ifndef NDEBUG
-  NSLog(@"%s (line:%d) Codificando__________", __PRETTY_FUNCTION__, __LINE__);
-#endif
-  
-  [userDefault setObject:[NSKeyedArchiver archivedDataWithRootObject:tmpArray]
-                  forKey:@"alumnos"];
   
     return YES;
 }
