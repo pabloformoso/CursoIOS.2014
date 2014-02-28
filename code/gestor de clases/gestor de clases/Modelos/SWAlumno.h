@@ -20,4 +20,6 @@
 @property(nonatomic, strong) NSString *email;
 @property(nonatomic, strong) NSString *avatarUrl;
 
+- (NSString *)nombreCompleto;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "SWAlumno.h"
 #import "SWAlumnoCell.h"
+#import "SWDetalleAlumnoViewController.h"
 #import "SWTablaAlumnosViewController.h"
 
 @interface SWTablaAlumnosViewController ()
@@ -51,7 +52,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
   if (section == 0) {
-    return 2000000;
+    return [_alumnos count];
   } else {
     return 0;
   }
@@ -62,7 +63,7 @@
     static NSString *CellIdentifier = @"Cell";
     SWAlumnoCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-  SWAlumno *tmp = [_alumnos objectAtIndex:0];
+  SWAlumno *tmp = [_alumnos objectAtIndex:indexPath.row];
   
   [cell.nombreLabel setText:tmp.nombre];
   [cell.ciudadLabel setText:tmp.ciudad];
@@ -116,8 +117,21 @@
 #ifndef NDEBUG
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+  
+  NSIndexPath *seleccionado = [self.tableView indexPathForSelectedRow];
+  SWAlumno *tmp = [_alumnos objectAtIndex:seleccionado.row];
+  
+  if ([segue.identifier isEqualToString:@"ver_detalle"]) {
+    SWDetalleAlumnoViewController *controladorDestino = [segue destinationViewController];
+    [controladorDestino loadData:tmp];
+    /* 
+    Envío como si fuese un protocolo informal
+    if ([controladorDestino respondsToSelector:@selector(loadData:)]) {
+      [controladorDestino performSelector:@selector(loadData:) withObject:tmp];
+    }
+    */
+    
+  }
 }
 
 @end

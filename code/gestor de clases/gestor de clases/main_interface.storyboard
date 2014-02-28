@@ -437,6 +437,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detalle alumno" id="dfE-J9-Pzk"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="ucl-i7-fek" id="RUf-QM-hUC"/>
+                        <outlet property="ciudadLabel" destination="fDV-dP-tzU" id="ain-gi-i5a"/>
+                        <outlet property="emailLabel" destination="60j-xz-IOb" id="awH-S8-02o"/>
+                        <outlet property="nombreLabel" destination="58E-jr-qWe" id="57H-iY-4gr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqd-3a-hIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

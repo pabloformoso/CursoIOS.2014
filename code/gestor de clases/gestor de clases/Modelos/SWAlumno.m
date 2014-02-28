@@ -27,4 +27,8 @@
   return self;
 }
 
+- (NSString *)nombreCompleto {
+  return [_nombre stringByAppendingFormat:@" %@", _apellidos];
+}
+
 @end
