@@ -8,7 +8,7 @@
         <scene sceneID="W2O-0g-oar">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="LUB-Tr-1qm" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xHG-Nf-PA6">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -66,7 +66,7 @@
                                     <outlet property="ciudadLabel" destination="6hz-VH-Ess" id="2LD-ie-pxk"/>
                                     <outlet property="emailLabel" destination="FeG-wh-Evv" id="axm-wU-MxZ"/>
                                     <outlet property="nombreLabel" destination="Bnq-ho-N0u" id="Bmr-8d-ORy"/>
-                                    <segue destination="wQN-CS-QaG" kind="push" id="fCk-uv-GR0"/>
+                                    <segue destination="wQN-CS-QaG" kind="push" identifier="ver_detalle" id="fCk-uv-GR0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -398,10 +398,10 @@
             </objects>
             <point key="canvasLocation" x="2078" y="1388"/>
         </scene>
-        <!--View Controller - Detalle alumno-->
+        <!--Detalle Alumno View Controller - Detalle alumno-->
         <scene sceneID="Ygh-fD-Yj8">
             <objects>
-                <viewController id="wQN-CS-QaG" sceneMemberID="viewController">
+                <viewController id="wQN-CS-QaG" customClass="SWDetalleAlumnoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FLc-tb-QgH"/>
                         <viewControllerLayoutGuide type="bottom" id="bfA-lA-SDy"/>
@@ -409,6 +409,31 @@
                     <view key="view" contentMode="scaleToFill" id="268-V2-RDj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucl-i7-fek">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pablo Formoso Estrada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58E-jr-qWe">
+                                <rect key="frame" x="20" y="285" width="280" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pablo@pabloformoso.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60j-xz-IOb">
+                                <rect key="frame" x="20" y="336" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oleiros" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDV-dP-tzU">
+                                <rect key="frame" x="20" y="374" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detalle alumno" id="dfE-J9-Pzk"/>

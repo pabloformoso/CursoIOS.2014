@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E28BEB218C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */; };
 		6E292E2F18BF55EB0024380E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E2E18BF55EB0024380E /* Foundation.framework */; };
 		6E292E3118BF55EB0024380E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E3018BF55EB0024380E /* CoreGraphics.framework */; };
 		6E292E3318BF55EB0024380E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292E3218BF55EB0024380E /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E28BEB018C08D6400A2C5C8 /* SWDetalleAlumnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWDetalleAlumnoViewController.h; sourceTree = "<group>"; };
+		6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWDetalleAlumnoViewController.m; sourceTree = "<group>"; };
 		6E292E2B18BF55EB0024380E /* gestor de clases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestor de clases.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E292E2E18BF55EB0024380E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E292E3018BF55EB0024380E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,8 @@
 			children = (
 				6E292E6618BF6B9E0024380E /* SWTablaAlumnosViewController.h */,
 				6E292E6718BF6B9E0024380E /* SWTablaAlumnosViewController.m */,
+				6E28BEB018C08D6400A2C5C8 /* SWDetalleAlumnoViewController.h */,
+				6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			files = (
 				6E292E6C18BF73430024380E /* SWAlumnoCell.m in Sources */,
 				6E292E6418BF68F50024380E /* SWAlumno.m in Sources */,
+				6E28BEB218C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m in Sources */,
 				6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */,
 				6E292E3F18BF55EB0024380E /* SWAppDelegate.m in Sources */,
 				6E292E3B18BF55EB0024380E /* main.m in Sources */,
@@ -499,6 +505,7 @@
 				6E292E5918BF55EC0024380E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E292E5A18BF55EC0024380E /* Build configuration list for PBXNativeTarget "gestor de clasesTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +514,7 @@
 				6E292E5C18BF55EC0024380E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
