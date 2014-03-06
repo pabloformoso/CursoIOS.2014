@@ -14,4 +14,5 @@
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
   #import "SQLiteAccess+Curso.h"
+  #import "SWConstantes.h"
 #endif

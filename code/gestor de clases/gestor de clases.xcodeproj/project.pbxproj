@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E25B22918C931D6008B591F /* SWResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25B22718C931D6008B591F /* SWResource.m */; };
+		6E25B22C18C9322E008B591F /* SWMapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25B22A18C9322E008B591F /* SWMapPin.m */; };
+		6E25B23018C9328E008B591F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25B22E18C9328E008B591F /* MBProgressHUD.m */; };
+		6E25B23318C932B0008B591F /* SWResourcesJsonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25B23218C932B0008B591F /* SWResourcesJsonService.m */; };
+		6E25B23618C933FE008B591F /* SWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25B23418C933FE008B591F /* SWLocationManager.m */; };
+		6E25B23918C93431008B591F /* SWPostResourceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25B23818C93431008B591F /* SWPostResourceService.m */; };
 		6E28BEB218C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */; };
 		6E28BEB718C0AEAA00A2C5C8 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6E28BEB418C0AEAA00A2C5C8 /* db.sqlite */; };
 		6E28BEB818C0AEAA00A2C5C8 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BEB618C0AEAA00A2C5C8 /* SQLiteAccess.m */; };
@@ -76,6 +82,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E25B22418C93168008B591F /* SWConstantes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWConstantes.h; sourceTree = "<group>"; };
+		6E25B22718C931D6008B591F /* SWResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWResource.m; sourceTree = "<group>"; };
+		6E25B22818C931D6008B591F /* SWResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWResource.h; sourceTree = "<group>"; };
+		6E25B22A18C9322E008B591F /* SWMapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMapPin.m; sourceTree = "<group>"; };
+		6E25B22B18C9322E008B591F /* SWMapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMapPin.h; sourceTree = "<group>"; };
+		6E25B22E18C9328E008B591F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6E25B22F18C9328E008B591F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6E25B23118C932B0008B591F /* SWResourcesJsonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWResourcesJsonService.h; path = WebServices/SWResourcesJsonService.h; sourceTree = "<group>"; };
+		6E25B23218C932B0008B591F /* SWResourcesJsonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWResourcesJsonService.m; path = WebServices/SWResourcesJsonService.m; sourceTree = "<group>"; };
+		6E25B23418C933FE008B591F /* SWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLocationManager.m; sourceTree = "<group>"; };
+		6E25B23518C933FE008B591F /* SWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLocationManager.h; sourceTree = "<group>"; };
+		6E25B23718C93431008B591F /* SWPostResourceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWPostResourceService.h; path = WebServices/SWPostResourceService.h; sourceTree = "<group>"; };
+		6E25B23818C93431008B591F /* SWPostResourceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWPostResourceService.m; path = WebServices/SWPostResourceService.m; sourceTree = "<group>"; };
 		6E28BEB018C08D6400A2C5C8 /* SWDetalleAlumnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWDetalleAlumnoViewController.h; sourceTree = "<group>"; };
 		6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWDetalleAlumnoViewController.m; sourceTree = "<group>"; };
 		6E28BEB418C0AEAA00A2C5C8 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = SQLite/db.sqlite; sourceTree = "<group>"; };
@@ -197,6 +216,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E25B22D18C93259008B591F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6E25B23418C933FE008B591F /* SWLocationManager.m */,
+				6E25B23518C933FE008B591F /* SWLocationManager.h */,
+				6E25B22E18C9328E008B591F /* MBProgressHUD.m */,
+				6E25B22F18C9328E008B591F /* MBProgressHUD.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		6E28BEB318C0AEAA00A2C5C8 /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +283,7 @@
 		6E292E3418BF55EB0024380E /* gestor de clases */ = {
 			isa = PBXGroup;
 			children = (
+				6E25B22D18C93259008B591F /* Shared */,
 				6EEA858D18C892AD00FDCF14 /* AFNetworking */,
 				6EEA858018C8727700FDCF14 /* Webservices */,
 				6E28BEBB18C0B98100A2C5C8 /* Categorias */,
@@ -265,6 +296,7 @@
 				6E292E4018BF55EB0024380E /* Images.xcassets */,
 				6E292E3518BF55EB0024380E /* Supporting Files */,
 				6E292E5D18BF566E0024380E /* main_interface.storyboard */,
+				6E25B22418C93168008B591F /* SWConstantes.h */,
 			);
 			path = "gestor de clases";
 			sourceTree = "<group>";
@@ -303,6 +335,10 @@
 		6E292E6118BF68450024380E /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
+				6E25B22A18C9322E008B591F /* SWMapPin.m */,
+				6E25B22B18C9322E008B591F /* SWMapPin.h */,
+				6E25B22718C931D6008B591F /* SWResource.m */,
+				6E25B22818C931D6008B591F /* SWResource.h */,
 				6E292E6218BF68F50024380E /* SWAlumno.h */,
 				6E292E6318BF68F50024380E /* SWAlumno.m */,
 				6EEA85C218C8957000FDCF14 /* SWClase.h */,
@@ -344,6 +380,10 @@
 				6EEA858518C8792800FDCF14 /* SWAlumnosXMLService.m */,
 				6EEA85C518C896DB00FDCF14 /* SWClasesJsonService.h */,
 				6EEA85C618C896DB00FDCF14 /* SWClasesJsonService.m */,
+				6E25B23118C932B0008B591F /* SWResourcesJsonService.h */,
+				6E25B23218C932B0008B591F /* SWResourcesJsonService.m */,
+				6E25B23718C93431008B591F /* SWPostResourceService.h */,
+				6E25B23818C93431008B591F /* SWPostResourceService.m */,
 			);
 			name = Webservices;
 			sourceTree = "<group>";
@@ -539,12 +579,15 @@
 				6EEA85B718C892DE00FDCF14 /* AFURLConnectionOperation.m in Sources */,
 				6E292E6C18BF73430024380E /* SWAlumnoCell.m in Sources */,
 				6EEA85B618C892DE00FDCF14 /* AFSecurityPolicy.m in Sources */,
+				6E25B23018C9328E008B591F /* MBProgressHUD.m in Sources */,
 				6EEA858618C8792800FDCF14 /* SWAlumnosXMLService.m in Sources */,
 				6EEA85C018C892DE00FDCF14 /* UIProgressView+AFNetworking.m in Sources */,
 				6EEA85BD18C892DE00FDCF14 /* UIAlertView+AFNetworking.m in Sources */,
+				6E25B23618C933FE008B591F /* SWLocationManager.m in Sources */,
 				6EEA85C418C8957000FDCF14 /* SWClase.m in Sources */,
 				6EEA85BB18C892DE00FDCF14 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				6EEA85B318C892DE00FDCF14 /* AFHTTPRequestOperationManager.m in Sources */,
+				6E25B23318C932B0008B591F /* SWResourcesJsonService.m in Sources */,
 				6EEA85C118C892DE00FDCF14 /* UIWebView+AFNetworking.m in Sources */,
 				6EEA85BE18C892DE00FDCF14 /* UIButton+AFNetworking.m in Sources */,
 				6EEA85BC18C892DE00FDCF14 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -554,6 +597,9 @@
 				6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */,
 				6E292E3F18BF55EB0024380E /* SWAppDelegate.m in Sources */,
 				6EEA85BA18C892DE00FDCF14 /* AFURLSessionManager.m in Sources */,
+				6E25B22918C931D6008B591F /* SWResource.m in Sources */,
+				6E25B23918C93431008B591F /* SWPostResourceService.m in Sources */,
+				6E25B22C18C9322E008B591F /* SWMapPin.m in Sources */,
 				6EEA85CA18C8A0FD00FDCF14 /* SWTableClasesViewController.m in Sources */,
 				6EEA85B918C892DE00FDCF14 /* AFURLResponseSerialization.m in Sources */,
 				6E292E3B18BF55EB0024380E /* main.m in Sources */,

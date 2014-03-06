@@ -27,7 +27,6 @@
 - (void)viewWillAppear:(BOOL)animated {
 #ifndef NDEBUG
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
-  NSLog(_alumno.avatarUrl);
 #endif
   
   [super viewWillAppear:animated];
