@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Pablo Formoso Estada. All rights reserved.
 //
 #import "SWAlumno.h"
+#import "UIImageView+AFNetworking.h"
 #import "SWDetalleAlumnoViewController.h"
 
 @interface SWDetalleAlumnoViewController ()
@@ -26,13 +27,18 @@
 - (void)viewWillAppear:(BOOL)animated {
 #ifndef NDEBUG
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+  NSLog(_alumno.avatarUrl);
 #endif
   
-  [super viewDidAppear:animated];
+  [super viewWillAppear:animated];
 
   [_nombreLabel setText:[_alumno nombreCompleto]];
   [_emailLabel setText:_alumno.email];
   [_ciudadLabel setText:_alumno.ciudad];
+  
+  NSURL *imgUrl = [NSURL URLWithString:_alumno.avatarUrl];
+  [_avatarImageView setImageWithURL:imgUrl
+                   placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
 }
 
 - (void)didReceiveMemoryWarning

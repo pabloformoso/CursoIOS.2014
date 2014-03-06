@@ -10,6 +10,7 @@
 #import "SWAlumnoCell.h"
 #import "SWDetalleAlumnoViewController.h"
 #import "SWTablaAlumnosViewController.h"
+#import "SWAlumnosXMLService.h"
 
 @interface SWTablaAlumnosViewController ()
 
@@ -135,13 +136,39 @@
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
   
+  SWAlumnosXMLService *ws = [[SWAlumnosXMLService alloc] init];
+  [ws getAlumnosXML:self];
+  
+  /*
+  Carga de datos desde SQLite3
   _alumnos = [[NSMutableArray alloc] initWithArray:[SQLiteAccess seleccionarTodosLosAlumnos]];
   
-  /* Cargar datos desde el userDefault
+  Cargar datos desde el userDefault
   NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
   NSData *alumnosData = [userDefaults objectForKey:@"alumnos"];
   _alumnos = [NSKeyedUnarchiver unarchiveObjectWithData:alumnosData];
    */
+}
+- (void)setData:(NSMutableArray *)unArray {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  _alumnos = [[NSMutableArray alloc] initWithArray:unArray];
+  [self.tableView reloadData]; // Ejecuta de nuevo el dataSource
+}
+
+- (void)failData {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d) Ha ocurrido un error", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                  message:@"Problema al cargar al cargar la información"
+                                                 delegate:nil
+                                        cancelButtonTitle:@"Aceptar"
+                                        otherButtonTitles:nil];
+  [alert show];
 }
 
 @end
