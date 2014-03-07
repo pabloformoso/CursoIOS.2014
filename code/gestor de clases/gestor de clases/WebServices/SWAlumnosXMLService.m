@@ -26,8 +26,8 @@
 #endif
   
   _controller = aController;
-  
-  NSURL *url = [NSURL URLWithString:@"http://192.168.0.188:3000/stundents.xml"];
+    NSURL *url = [NSURL URLWithString:[kBaseUrl stringByAppendingString:@"/stundents.xml"]];
+
   NSURLRequest *req = [[NSURLRequest alloc] initWithURL:url
                                             cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
                                         timeoutInterval:15];

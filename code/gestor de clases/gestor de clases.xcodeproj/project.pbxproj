@@ -35,6 +35,9 @@
 		6E292E6418BF68F50024380E /* SWAlumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6318BF68F50024380E /* SWAlumno.m */; };
 		6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6718BF6B9E0024380E /* SWTablaAlumnosViewController.m */; };
 		6E292E6C18BF73430024380E /* SWAlumnoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6B18BF73430024380E /* SWAlumnoCell.m */; };
+		6EBB6A4618C9CEA4006483D1 /* SWRecursosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */; };
+		6EBB6A4918C9D3A3006483D1 /* SWWebCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4818C9D3A3006483D1 /* SWWebCell.m */; };
+		6EBB6A4C18C9D3B3006483D1 /* SWImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4B18C9D3B3006483D1 /* SWImageCell.m */; };
 		6EEA858318C872BC00FDCF14 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA858218C872BC00FDCF14 /* BaseXmlParser.m */; };
 		6EEA858618C8792800FDCF14 /* SWAlumnosXMLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA858518C8792800FDCF14 /* SWAlumnosXMLService.m */; };
 		6EEA858818C8926300FDCF14 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEA858718C8926300FDCF14 /* CFNetwork.framework */; };
@@ -127,6 +130,12 @@
 		6E292E6718BF6B9E0024380E /* SWTablaAlumnosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTablaAlumnosViewController.m; sourceTree = "<group>"; };
 		6E292E6A18BF73430024380E /* SWAlumnoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAlumnoCell.h; sourceTree = "<group>"; };
 		6E292E6B18BF73430024380E /* SWAlumnoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAlumnoCell.m; sourceTree = "<group>"; };
+		6EBB6A4418C9CEA4006483D1 /* SWRecursosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRecursosCollectionViewController.h; sourceTree = "<group>"; };
+		6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRecursosCollectionViewController.m; sourceTree = "<group>"; };
+		6EBB6A4718C9D3A3006483D1 /* SWWebCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWebCell.h; sourceTree = "<group>"; };
+		6EBB6A4818C9D3A3006483D1 /* SWWebCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWebCell.m; sourceTree = "<group>"; };
+		6EBB6A4A18C9D3B3006483D1 /* SWImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWImageCell.h; sourceTree = "<group>"; };
+		6EBB6A4B18C9D3B3006483D1 /* SWImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWImageCell.m; sourceTree = "<group>"; };
 		6EEA858118C872BC00FDCF14 /* BaseXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXmlParser.h; sourceTree = "<group>"; };
 		6EEA858218C872BC00FDCF14 /* BaseXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXmlParser.m; sourceTree = "<group>"; };
 		6EEA858418C8792800FDCF14 /* SWAlumnosXMLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWAlumnosXMLService.h; path = WebServices/SWAlumnosXMLService.h; sourceTree = "<group>"; };
@@ -356,6 +365,8 @@
 				6E28BEB118C08D6400A2C5C8 /* SWDetalleAlumnoViewController.m */,
 				6EEA85C818C8A0FD00FDCF14 /* SWTableClasesViewController.h */,
 				6EEA85C918C8A0FD00FDCF14 /* SWTableClasesViewController.m */,
+				6EBB6A4418C9CEA4006483D1 /* SWRecursosCollectionViewController.h */,
+				6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -367,6 +378,10 @@
 				6E292E6B18BF73430024380E /* SWAlumnoCell.m */,
 				6EEA85CB18C8A32D00FDCF14 /* SWClaseCell.h */,
 				6EEA85CC18C8A32D00FDCF14 /* SWClaseCell.m */,
+				6EBB6A4718C9D3A3006483D1 /* SWWebCell.h */,
+				6EBB6A4818C9D3A3006483D1 /* SWWebCell.m */,
+				6EBB6A4A18C9D3B3006483D1 /* SWImageCell.h */,
+				6EBB6A4B18C9D3B3006483D1 /* SWImageCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -578,6 +593,7 @@
 				6EEA85CD18C8A32D00FDCF14 /* SWClaseCell.m in Sources */,
 				6EEA85B718C892DE00FDCF14 /* AFURLConnectionOperation.m in Sources */,
 				6E292E6C18BF73430024380E /* SWAlumnoCell.m in Sources */,
+				6EBB6A4618C9CEA4006483D1 /* SWRecursosCollectionViewController.m in Sources */,
 				6EEA85B618C892DE00FDCF14 /* AFSecurityPolicy.m in Sources */,
 				6E25B23018C9328E008B591F /* MBProgressHUD.m in Sources */,
 				6EEA858618C8792800FDCF14 /* SWAlumnosXMLService.m in Sources */,
@@ -588,6 +604,8 @@
 				6EEA85BB18C892DE00FDCF14 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				6EEA85B318C892DE00FDCF14 /* AFHTTPRequestOperationManager.m in Sources */,
 				6E25B23318C932B0008B591F /* SWResourcesJsonService.m in Sources */,
+				6EBB6A4C18C9D3B3006483D1 /* SWImageCell.m in Sources */,
+				6EBB6A4918C9D3A3006483D1 /* SWWebCell.m in Sources */,
 				6EEA85C118C892DE00FDCF14 /* UIWebView+AFNetworking.m in Sources */,
 				6EEA85BE18C892DE00FDCF14 /* UIButton+AFNetworking.m in Sources */,
 				6EEA85BC18C892DE00FDCF14 /* UIActivityIndicatorView+AFNetworking.m in Sources */,

@@ -25,8 +25,8 @@
 #endif
   
   _controller = aController;
+  NSURL *url = [NSURL URLWithString:[kBaseUrl stringByAppendingString:@"/aecomo_classes.json"]];
   
-  NSURL *url = [NSURL URLWithString:@"http://192.168.0.188:3000/aecomo_classes.json"];
   NSURLRequest *req = [[NSURLRequest alloc] initWithURL:url];
   
   AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:req];
