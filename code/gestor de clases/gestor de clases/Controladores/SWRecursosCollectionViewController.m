@@ -5,12 +5,17 @@
 //  Created by Pablo Formoso Estada on 07/03/14.
 //  Copyright (c) 2014 Pablo Formoso Estada. All rights reserved.
 //
+#import "UIImageView+AFNetworking.h"
 
 #import "SWResource.h"
+#import "SWImageCell.h"
+#import "SWWebCell.h"
 #import "SWResourcesJsonService.h"
 #import "SWRecursosCollectionViewController.h"
 
 @interface SWRecursosCollectionViewController ()
+
+@property (nonatomic, strong) NSArray *resources;
 
 @end
 
@@ -18,6 +23,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
   [self loadData];
 }
 
@@ -31,17 +39,42 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-  return 0; // tamaño del array de recursos
+  return [_resources count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
   
-  return nil;
+  SWResource *res = [_resources objectAtIndex:indexPath.item];
+  
+  if ([res isPhoto]) {
+    // cargamos la celda para las imagenes
+    SWImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageCell" forIndexPath:indexPath];
+    
+    [cell.imageView setImageWithURL:[NSURL URLWithString:res.photo_url]
+                   placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    
+    return cell;
+  } else {
+    SWWebCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WebCell" forIndexPath:indexPath];
+    
+    [cell.titleLabel setText:res.name];
+    [cell.descriptionLabel setText:res.description];
+    
+    return cell;
+  }
 }
 
 #pragma mark - Navigation 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  NSIndexPath *selected = self.collectionView.indexPathsForSelectedItems[0];
+  SWResource *tmpRes = [_resources objectAtIndex:selected.item];
   
+  if ([segue.identifier isEqualToString:@"web_detalle"]) {
+    [segue.destinationViewController performSelector:@selector(setResource:) withObject:tmpRes];
+  }
 }
 
 #pragma mark - Privados
@@ -49,6 +82,7 @@
 #ifndef NDEBUG
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
+  _resources = [[NSArray alloc] init];
   
   [MBProgressHUD showHUDAddedTo:self.view animated:YES andText:@"Cargando..."];
 
@@ -61,7 +95,10 @@
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
   
-  // implementación
+  _resources = nil;
+  _resources = [[NSArray alloc] initWithArray:unArray];
+  
+  [self.collectionView reloadData];
   
   [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
@@ -71,6 +108,12 @@
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
   
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                  message:@"Problema al cargar al cargar la información"
+                                                 delegate:nil
+                                        cancelButtonTitle:@"Aceptar"
+                                        otherButtonTitles:nil];
+  [alert show];
   
   [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }

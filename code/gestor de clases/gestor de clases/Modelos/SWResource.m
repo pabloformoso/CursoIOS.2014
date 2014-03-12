@@ -18,10 +18,14 @@
     _name = [dic objectForKey:@"name"];
     _link = [dic objectForKey:@"link"];
     _description = [dic objectForKey:@"description"];
-    _photo_url = @"";
+    _photo_url = [dic objectForKey:@"photo_url"];
   }
   
   return self;
+}
+
+- (BOOL)isPhoto {
+  return (_photo_url && (_photo_url.length > 1));
 }
 
 @end

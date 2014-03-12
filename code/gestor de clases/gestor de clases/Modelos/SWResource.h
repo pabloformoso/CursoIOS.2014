@@ -17,5 +17,8 @@
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSString *link;
 @property (nonatomic, strong) NSString *photo_url;
+@property (nonatomic, strong) UIImage *image;
+
+- (BOOL)isPhoto;
 
 @end

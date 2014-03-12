@@ -38,6 +38,9 @@
 		6EBB6A4618C9CEA4006483D1 /* SWRecursosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */; };
 		6EBB6A4918C9D3A3006483D1 /* SWWebCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4818C9D3A3006483D1 /* SWWebCell.m */; };
 		6EBB6A4C18C9D3B3006483D1 /* SWImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4B18C9D3B3006483D1 /* SWImageCell.m */; };
+		6EBB6A4F18C9EEFA006483D1 /* SWAddResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4E18C9EEFA006483D1 /* SWAddResourceViewController.m */; };
+		6EE9A07D18D10E0B0031347F /* SWPostResourceImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9A07C18D10E0B0031347F /* SWPostResourceImageService.m */; };
+		6EE9A08018D110010031347F /* SWWebDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9A07F18D110010031347F /* SWWebDetailViewController.m */; };
 		6EEA858318C872BC00FDCF14 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA858218C872BC00FDCF14 /* BaseXmlParser.m */; };
 		6EEA858618C8792800FDCF14 /* SWAlumnosXMLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA858518C8792800FDCF14 /* SWAlumnosXMLService.m */; };
 		6EEA858818C8926300FDCF14 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEA858718C8926300FDCF14 /* CFNetwork.framework */; };
@@ -136,6 +139,12 @@
 		6EBB6A4818C9D3A3006483D1 /* SWWebCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWebCell.m; sourceTree = "<group>"; };
 		6EBB6A4A18C9D3B3006483D1 /* SWImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWImageCell.h; sourceTree = "<group>"; };
 		6EBB6A4B18C9D3B3006483D1 /* SWImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWImageCell.m; sourceTree = "<group>"; };
+		6EBB6A4D18C9EEFA006483D1 /* SWAddResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAddResourceViewController.h; sourceTree = "<group>"; };
+		6EBB6A4E18C9EEFA006483D1 /* SWAddResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAddResourceViewController.m; sourceTree = "<group>"; };
+		6EE9A07B18D10E0B0031347F /* SWPostResourceImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWPostResourceImageService.h; path = WebServices/SWPostResourceImageService.h; sourceTree = "<group>"; };
+		6EE9A07C18D10E0B0031347F /* SWPostResourceImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWPostResourceImageService.m; path = WebServices/SWPostResourceImageService.m; sourceTree = "<group>"; };
+		6EE9A07E18D110010031347F /* SWWebDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWebDetailViewController.h; sourceTree = "<group>"; };
+		6EE9A07F18D110010031347F /* SWWebDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWebDetailViewController.m; sourceTree = "<group>"; };
 		6EEA858118C872BC00FDCF14 /* BaseXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXmlParser.h; sourceTree = "<group>"; };
 		6EEA858218C872BC00FDCF14 /* BaseXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXmlParser.m; sourceTree = "<group>"; };
 		6EEA858418C8792800FDCF14 /* SWAlumnosXMLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWAlumnosXMLService.h; path = WebServices/SWAlumnosXMLService.h; sourceTree = "<group>"; };
@@ -367,6 +376,10 @@
 				6EEA85C918C8A0FD00FDCF14 /* SWTableClasesViewController.m */,
 				6EBB6A4418C9CEA4006483D1 /* SWRecursosCollectionViewController.h */,
 				6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */,
+				6EBB6A4D18C9EEFA006483D1 /* SWAddResourceViewController.h */,
+				6EBB6A4E18C9EEFA006483D1 /* SWAddResourceViewController.m */,
+				6EE9A07E18D110010031347F /* SWWebDetailViewController.h */,
+				6EE9A07F18D110010031347F /* SWWebDetailViewController.m */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -399,6 +412,8 @@
 				6E25B23218C932B0008B591F /* SWResourcesJsonService.m */,
 				6E25B23718C93431008B591F /* SWPostResourceService.h */,
 				6E25B23818C93431008B591F /* SWPostResourceService.m */,
+				6EE9A07B18D10E0B0031347F /* SWPostResourceImageService.h */,
+				6EE9A07C18D10E0B0031347F /* SWPostResourceImageService.m */,
 			);
 			name = Webservices;
 			sourceTree = "<group>";
@@ -608,6 +623,7 @@
 				6EBB6A4918C9D3A3006483D1 /* SWWebCell.m in Sources */,
 				6EEA85C118C892DE00FDCF14 /* UIWebView+AFNetworking.m in Sources */,
 				6EEA85BE18C892DE00FDCF14 /* UIButton+AFNetworking.m in Sources */,
+				6EE9A08018D110010031347F /* SWWebDetailViewController.m in Sources */,
 				6EEA85BC18C892DE00FDCF14 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				6E292E6418BF68F50024380E /* SWAlumno.m in Sources */,
 				6E28BEBE18C0BA0100A2C5C8 /* SQLiteAccess+Curso.m in Sources */,
@@ -620,10 +636,12 @@
 				6E25B22C18C9322E008B591F /* SWMapPin.m in Sources */,
 				6EEA85CA18C8A0FD00FDCF14 /* SWTableClasesViewController.m in Sources */,
 				6EEA85B918C892DE00FDCF14 /* AFURLResponseSerialization.m in Sources */,
+				6EE9A07D18D10E0B0031347F /* SWPostResourceImageService.m in Sources */,
 				6E292E3B18BF55EB0024380E /* main.m in Sources */,
 				6EEA85C718C896DB00FDCF14 /* SWClasesJsonService.m in Sources */,
 				6E28BEB818C0AEAA00A2C5C8 /* SQLiteAccess.m in Sources */,
 				6EEA85B818C892DE00FDCF14 /* AFURLRequestSerialization.m in Sources */,
+				6EBB6A4F18C9EEFA006483D1 /* SWAddResourceViewController.m in Sources */,
 				6EEA85BF18C892DE00FDCF14 /* UIImageView+AFNetworking.m in Sources */,
 				6EEA85B518C892DE00FDCF14 /* AFNetworkReachabilityManager.m in Sources */,
 				6EEA858318C872BC00FDCF14 /* BaseXmlParser.m in Sources */,
