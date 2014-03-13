@@ -35,6 +35,10 @@
 #ifndef NDEBUG
     NSLog(@"%s (line:%d) Creado correctamente", __PRETTY_FUNCTION__, __LINE__);
 #endif
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kPostResourceNotification
+                                                        object:nil];
+     
   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                     message:@"No se ha podido crear el recurso"

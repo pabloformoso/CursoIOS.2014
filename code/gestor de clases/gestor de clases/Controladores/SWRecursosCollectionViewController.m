@@ -29,6 +29,27 @@
   [self loadData];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  [super viewDidAppear:animated];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(loadData)
+                                               name:kPostResourceNotification
+                                             object:nil];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  [super viewDidDisappear:animated];
+  
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -69,11 +90,14 @@
 #ifndef NDEBUG
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
-  NSIndexPath *selected = self.collectionView.indexPathsForSelectedItems[0];
-  SWResource *tmpRes = [_resources objectAtIndex:selected.item];
+
   
   if ([segue.identifier isEqualToString:@"web_detalle"]) {
-    [segue.destinationViewController performSelector:@selector(setResource:) withObject:tmpRes];
+    NSIndexPath *selected = self.collectionView.indexPathsForSelectedItems[0];
+    SWResource *tmpRes = [_resources objectAtIndex:selected.item];
+    
+    [segue.destinationViewController performSelector:@selector(setResource:)
+                                          withObject:tmpRes];
   }
 }
 

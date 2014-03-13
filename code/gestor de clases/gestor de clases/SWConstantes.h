@@ -7,5 +7,6 @@
 //
 
 #define kBaseUrl @"http://curso.softwhisper.es"
+#define kPostResourceNotification @"post_notification"
 
 
