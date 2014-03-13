@@ -335,10 +335,10 @@
             </objects>
             <point key="canvasLocation" x="1139" y="2057"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="1Yi-hx-mrw">
             <objects>
-                <viewController id="EZZ-ac-gGI" sceneMemberID="viewController">
+                <viewController id="EZZ-ac-gGI" customClass="SWMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jA7-Gc-U6F"/>
                         <viewControllerLayoutGuide type="bottom" id="BWd-7h-vph"/>
@@ -350,11 +350,17 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sje-Js-FG2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="EZZ-ac-gGI" id="cQa-ed-gBW"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="NuN-CM-Nsv"/>
+                    <connections>
+                        <outlet property="mapView" destination="sje-Js-FG2" id="e27-cU-IqE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTT-aa-Jbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

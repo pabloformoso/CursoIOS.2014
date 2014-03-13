@@ -35,6 +35,7 @@
 		6E292E6418BF68F50024380E /* SWAlumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6318BF68F50024380E /* SWAlumno.m */; };
 		6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6718BF6B9E0024380E /* SWTablaAlumnosViewController.m */; };
 		6E292E6C18BF73430024380E /* SWAlumnoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6B18BF73430024380E /* SWAlumnoCell.m */; };
+		6E3EB5B418D1BE8300C4128C /* SWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EB5B318D1BE8300C4128C /* SWMapViewController.m */; };
 		6EBB6A4618C9CEA4006483D1 /* SWRecursosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */; };
 		6EBB6A4918C9D3A3006483D1 /* SWWebCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4818C9D3A3006483D1 /* SWWebCell.m */; };
 		6EBB6A4C18C9D3B3006483D1 /* SWImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4B18C9D3B3006483D1 /* SWImageCell.m */; };
@@ -133,6 +134,8 @@
 		6E292E6718BF6B9E0024380E /* SWTablaAlumnosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTablaAlumnosViewController.m; sourceTree = "<group>"; };
 		6E292E6A18BF73430024380E /* SWAlumnoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAlumnoCell.h; sourceTree = "<group>"; };
 		6E292E6B18BF73430024380E /* SWAlumnoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAlumnoCell.m; sourceTree = "<group>"; };
+		6E3EB5B218D1BE8300C4128C /* SWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMapViewController.h; sourceTree = "<group>"; };
+		6E3EB5B318D1BE8300C4128C /* SWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMapViewController.m; sourceTree = "<group>"; };
 		6EBB6A4418C9CEA4006483D1 /* SWRecursosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRecursosCollectionViewController.h; sourceTree = "<group>"; };
 		6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRecursosCollectionViewController.m; sourceTree = "<group>"; };
 		6EBB6A4718C9D3A3006483D1 /* SWWebCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWebCell.h; sourceTree = "<group>"; };
@@ -380,6 +383,8 @@
 				6EBB6A4E18C9EEFA006483D1 /* SWAddResourceViewController.m */,
 				6EE9A07E18D110010031347F /* SWWebDetailViewController.h */,
 				6EE9A07F18D110010031347F /* SWWebDetailViewController.m */,
+				6E3EB5B218D1BE8300C4128C /* SWMapViewController.h */,
+				6E3EB5B318D1BE8300C4128C /* SWMapViewController.m */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -622,6 +627,7 @@
 				6EBB6A4C18C9D3B3006483D1 /* SWImageCell.m in Sources */,
 				6EBB6A4918C9D3A3006483D1 /* SWWebCell.m in Sources */,
 				6EEA85C118C892DE00FDCF14 /* UIWebView+AFNetworking.m in Sources */,
+				6E3EB5B418D1BE8300C4128C /* SWMapViewController.m in Sources */,
 				6EEA85BE18C892DE00FDCF14 /* UIButton+AFNetworking.m in Sources */,
 				6EE9A08018D110010031347F /* SWWebDetailViewController.m in Sources */,
 				6EEA85BC18C892DE00FDCF14 /* UIActivityIndicatorView+AFNetworking.m in Sources */,

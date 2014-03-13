@@ -26,6 +26,10 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
   [self loadData];
 }
 
@@ -59,7 +63,8 @@
   return 1;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+     numberOfItemsInSection:(NSInteger)section {
   return [_resources count];
 }
 
