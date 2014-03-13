@@ -6,8 +6,8 @@ class ResourcesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @resources }
-      format.xml { render xml: @resources }
+      format.json { render json: @resources, methods: :image_url  }
+      format.xml { render xml: @resources, methods: :image_url  }
     end
   end
 
