@@ -36,6 +36,10 @@
 		6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6718BF6B9E0024380E /* SWTablaAlumnosViewController.m */; };
 		6E292E6C18BF73430024380E /* SWAlumnoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6B18BF73430024380E /* SWAlumnoCell.m */; };
 		6E3EB5B418D1BE8300C4128C /* SWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EB5B318D1BE8300C4128C /* SWMapViewController.m */; };
+		6E3EB5B818D1D97600C4128C /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3EB5B718D1D97600C4128C /* AudioStreamer.m */; };
+		6E3EB5BB18D1D9D400C4128C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3EB5B918D1D9D400C4128C /* AudioToolbox.framework */; };
+		6E3EB5BC18D1D9D400C4128C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3EB5BA18D1D9D400C4128C /* AVFoundation.framework */; };
+		6E3EB5BE18D1E0BF00C4128C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3EB5BD18D1E0BF00C4128C /* QuartzCore.framework */; };
 		6EBB6A4618C9CEA4006483D1 /* SWRecursosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */; };
 		6EBB6A4918C9D3A3006483D1 /* SWWebCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4818C9D3A3006483D1 /* SWWebCell.m */; };
 		6EBB6A4C18C9D3B3006483D1 /* SWImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB6A4B18C9D3B3006483D1 /* SWImageCell.m */; };
@@ -136,6 +140,11 @@
 		6E292E6B18BF73430024380E /* SWAlumnoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAlumnoCell.m; sourceTree = "<group>"; };
 		6E3EB5B218D1BE8300C4128C /* SWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMapViewController.h; sourceTree = "<group>"; };
 		6E3EB5B318D1BE8300C4128C /* SWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMapViewController.m; sourceTree = "<group>"; };
+		6E3EB5B618D1D97600C4128C /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		6E3EB5B718D1D97600C4128C /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		6E3EB5B918D1D9D400C4128C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6E3EB5BA18D1D9D400C4128C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E3EB5BD18D1E0BF00C4128C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6EBB6A4418C9CEA4006483D1 /* SWRecursosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRecursosCollectionViewController.h; sourceTree = "<group>"; };
 		6EBB6A4518C9CEA4006483D1 /* SWRecursosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRecursosCollectionViewController.m; sourceTree = "<group>"; };
 		6EBB6A4718C9D3A3006483D1 /* SWWebCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWebCell.h; sourceTree = "<group>"; };
@@ -213,6 +222,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3EB5BE18D1E0BF00C4128C /* QuartzCore.framework in Frameworks */,
+				6E3EB5BB18D1D9D400C4128C /* AudioToolbox.framework in Frameworks */,
+				6E3EB5BC18D1D9D400C4128C /* AVFoundation.framework in Frameworks */,
 				6EEA858C18C8928800FDCF14 /* Security.framework in Frameworks */,
 				6EEA858A18C8927C00FDCF14 /* MobileCoreServices.framework in Frameworks */,
 				6EEA858818C8926300FDCF14 /* CFNetwork.framework in Frameworks */,
@@ -240,6 +252,8 @@
 		6E25B22D18C93259008B591F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6E3EB5B618D1D97600C4128C /* AudioStreamer.h */,
+				6E3EB5B718D1D97600C4128C /* AudioStreamer.m */,
 				6E25B23418C933FE008B591F /* SWLocationManager.m */,
 				6E25B23518C933FE008B591F /* SWLocationManager.h */,
 				6E25B22E18C9328E008B591F /* MBProgressHUD.m */,
@@ -288,6 +302,9 @@
 		6E292E2D18BF55EB0024380E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E3EB5BD18D1E0BF00C4128C /* QuartzCore.framework */,
+				6E3EB5B918D1D9D400C4128C /* AudioToolbox.framework */,
+				6E3EB5BA18D1D9D400C4128C /* AVFoundation.framework */,
 				6EEA858B18C8928800FDCF14 /* Security.framework */,
 				6EEA858918C8927C00FDCF14 /* MobileCoreServices.framework */,
 				6EEA858718C8926300FDCF14 /* CFNetwork.framework */,
@@ -546,6 +563,9 @@
 				TargetAttributes = {
 					6E292E2A18BF55EB0024380E = {
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.iOS = {
 								enabled = 1;
 							};
@@ -637,6 +657,7 @@
 				6E292E6818BF6B9E0024380E /* SWTablaAlumnosViewController.m in Sources */,
 				6E292E3F18BF55EB0024380E /* SWAppDelegate.m in Sources */,
 				6EEA85BA18C892DE00FDCF14 /* AFURLSessionManager.m in Sources */,
+				6E3EB5B818D1D97600C4128C /* AudioStreamer.m in Sources */,
 				6E25B22918C931D6008B591F /* SWResource.m in Sources */,
 				6E25B23918C93431008B591F /* SWPostResourceService.m in Sources */,
 				6E25B22C18C9322E008B591F /* SWMapPin.m in Sources */,

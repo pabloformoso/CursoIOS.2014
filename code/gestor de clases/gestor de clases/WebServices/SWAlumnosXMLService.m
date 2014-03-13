@@ -118,7 +118,7 @@ didStartElement:(NSString *)elementName
     [_tmpAlumno setEmail:_contentsOfElement];
   } else if ([elementName isEqualToString:@"image-url"]) {
     [_tmpAlumno setAvatarUrl:
-     [@"http://192.168.0.188:3000" stringByAppendingString:_contentsOfElement]
+     [kBaseUrl stringByAppendingString:_contentsOfElement]
     ];
   }
   

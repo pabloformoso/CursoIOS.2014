@@ -7,6 +7,7 @@
 //
 @class SWAlumno;
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface SWDetalleAlumnoViewController : UIViewController
 
@@ -16,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *ciudadLabel;
 
 - (void)loadData:(SWAlumno *)unAlumno;
+- (IBAction)back:(id)sender;
+- (IBAction)doubleTapTouch:(id)sender;
 
 @end
