@@ -27,7 +27,7 @@
   
   NSURL *url = [NSURL URLWithString:@"http://80.86.106.136"];
   _player = [[AudioStreamer alloc] initWithURL:url];
-  [_player start];
+  //[_player start];
   
   [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
 #ifndef NDEBUG
