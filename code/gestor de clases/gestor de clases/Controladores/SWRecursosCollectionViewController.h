@@ -10,4 +10,7 @@
 
 @interface SWRecursosCollectionViewController : UICollectionViewController
 
+- (void)setData:(NSArray *)unArray;
+- (void)failData;
+
 @end

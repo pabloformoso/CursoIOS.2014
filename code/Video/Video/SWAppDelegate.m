@@ -1,12 +1,11 @@
 //
 //  SWAppDelegate.m
-//  master_detail
+//  Video
 //
-//  Created by Pablo Formoso Estada on 21/02/14.
+//  Created by Pablo Formoso Estada on 19/03/14.
 //  Copyright (c) 2014 Pablo Formoso Estada. All rights reserved.
 //
-// url para adhoc itms-services://?action=download-manifest&url=
-//
+
 #import "SWAppDelegate.h"
 
 @implementation SWAppDelegate
@@ -14,11 +13,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-      UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-      UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-      splitViewController.delegate = (id)navigationController.topViewController;
-  }
     return YES;
 }
 							
